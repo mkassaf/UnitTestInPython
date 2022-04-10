@@ -1,4 +1,4 @@
-# UnitTestInPython
+# Testing in Python: Unit Tests
 
 This repo conatins an exmaple how to write a unit tests in python. In this repo, I show how to run the unit tests, I also go through a process of achieving 100% test coverage by demonstrating:
 - **unittest** 
