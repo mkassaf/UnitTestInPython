@@ -1,9 +1,10 @@
 # UnitTestInPython
-In this repo, I go through a process of achieving 100% test coverage by demonstrating,
-- unittest 
-- pytest
-- coverage.py 
-- pytest-cov 
+
+This repo conatins an exmaple how to write a unit tests in python. In this repo, I show how to run the unit tests, I also go through a process of achieving 100% test coverage by demonstrating:
+- **unittest** 
+- **pytest**
+- **coverage.py**
+- **pytest-cov** 
 With all these things I achieve 100% Test Coverage in Python.
 
 
@@ -29,3 +30,12 @@ With all these things I achieve 100% Test Coverage in Python.
    - **pytest --cov=calculatorApp**
 - Run the following command to run the tests and generate html report for the code coverage: 
    - **pytest --cov=calculatorApp --cov-report=html**
+
+
+## Refernces 
+- https://coverage.readthedocs.io/en/6.3.2/
+- https://realpython.com/python-testing/
+- https://docs.python.org/3/library/venv.html
+- https://www.datacamp.com/community/tutorials/unit-testing-python
+- https://docs.python.org/3/library/unittest.html
+- https://geekflare.com/unit-testing-with-python-unittest/
