@@ -11,6 +11,7 @@ def check_user_input(input):
             val = float(input)
             return val
         except ValueError:
+            print(input + " input is not a number!")
             raise ValueError(input + " input is not a number!")
 
 
@@ -27,12 +28,19 @@ def multiply(x, y):
 
 # This function divides two numbers
 def divide(x, y):
-    return x / y
+    if y == 0:
+        print("You can't divide by zero!")
+        raise ZeroDivisionError("You can't divide by zero!")
+    else:
+        return x / y
 
 
 
 def calculate(choice, num1, num2 ):
     # check if choice is one of the four options
+    if not num1 or not num2:
+        print("inputs can not be null")
+        raise ValueError("inputs can not be null")  
     num1 = check_user_input(num1)
     num2 = check_user_input(num2)
     result = ""
@@ -49,6 +57,7 @@ def calculate(choice, num1, num2 ):
 
         elif choice == '4':
             if num2 == 0:
+                print("You can't divide by zero!")
                 raise ZeroDivisionError("You can't divide by zero!")
             result = num1, "/", num2, "=", divide(num1, num2)
     else:
