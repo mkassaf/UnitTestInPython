@@ -33,6 +33,7 @@ With all these things I achieve 100% Test Coverage in Python.
 
 
 ## Refernces 
+- https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
 - https://coverage.readthedocs.io/en/6.3.2/
 - https://realpython.com/python-testing/
 - https://docs.python.org/3/library/venv.html
