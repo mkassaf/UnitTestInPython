@@ -1,5 +1,9 @@
 # UnitTestInPython
-
+In this repo, I go through a process of achieving 100% test coverage by demonstrating,
+- unittest 
+- pytest
+- coverage.py 
+- pytest-cov 
 
 # Setup
 - Create a dirctory for the app: ie **mkdir project**
