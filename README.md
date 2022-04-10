@@ -39,3 +39,4 @@ With all these things I achieve 100% Test Coverage in Python.
 - https://www.datacamp.com/community/tutorials/unit-testing-python
 - https://docs.python.org/3/library/unittest.html
 - https://geekflare.com/unit-testing-with-python-unittest/
+- https://www.youtube.com/watch?v=7BJ_BKeeJyM&ab_channel=SBCODE
