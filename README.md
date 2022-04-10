@@ -4,6 +4,8 @@ In this repo, I go through a process of achieving 100% test coverage by demonstr
 - pytest
 - coverage.py 
 - pytest-cov 
+With all these things I achieve 100% Test Coverage in Python.
+
 
 # Setup
 - Create a dirctory for the app: ie **mkdir project**
@@ -13,3 +15,17 @@ In this repo, I go through a process of achieving 100% test coverage by demonstr
 - Activate virtual environment: **source vnev/bin/activate**
 - install the dependanceies: **pip3 install -r requirements.txt**
 
+# Steps 
+
+## run test using pytest
+- **pytest test_calculatorApp.py**
+## Code coverage
+- Run: **coverage run calculatorApp.py** to analyses file
+- Run: **coverage report -m** #outputs anaylsys and shows un covered lines
+- Run: **coverage html**  to create a more concise html version of the report
+
+## Run the test and generate code coverage
+- Run the following command to run the tests and print the code coverage:
+   - **pytest --cov=calculatorApp**
+- Run the following command to run the tests and generate html report for the code coverage: 
+   - **pytest --cov=calculatorApp --cov-report=html**
