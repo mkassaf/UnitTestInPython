@@ -9,27 +9,31 @@ With all these things I achieve 100% Test Coverage in Python.
 
 
 # Setup
-- Create a dirctory for the app: ie **mkdir project**
-- Clone the project: **git clone git@github.com:mkassaf/UnitTestInPython.git**
-- Go to the app: **cd UnitTestInPython**
-- Creating virtual environments: **python3 -m venv vnev**
-- Activate virtual environment: **source vnev/bin/activate**
-- install the dependanceies: **pip3 install -r requirements.txt**
+- Create a dirctory for the app: ie  ```bash mkdir project ```
+- Clone the project:  ```bash git clone git@github.com:mkassaf/UnitTestInPython.git ```
+- Go to the app:  ```bash cd UnitTestInPython ```
+- Creating virtual environments:  ```bash python3 -m venv vnev ```
+- Activate virtual environment:  ```bash source vnev/bin/activate ```
+- install the dependanceies:  ```bash pip3 install -r requirements.txt ```
 
 # Steps 
 
 ## run test using pytest
-- **pytest test_calculatorApp.py**
+
+```bash
+pytest test_calculatorApp.py 
+```
+
 ## Code coverage
-- To analyses file, Run: **coverage run calculatorApp.py** 
-- To generate outputs anaylsys and shows covered lines, Run: **coverage report -m**
-- To create a more concise html version of the report, Run: **coverage html**  
+- To analyses file, Run: ```bash coverage run calculatorApp.py ```
+- To generate outputs anaylsys and shows covered lines, Run:  ```bash coverage report -m ```
+- To create a more concise html version of the report, Run:  ```bash coverage html ```
 
 ## Run the test and generate code coverage
 - Run the following command to run the tests and print the code coverage:
-   - **pytest --cov=calculatorApp**
+    - ```bash pytest --cov=calculatorApp ```
 - Run the following command to run the tests and generate html report for the code coverage: 
-   - **pytest --cov=calculatorApp --cov-report=html**
+    - ```bash pytest --cov=calculatorApp --cov-report=html ```
 
 
 ## Refernces 
