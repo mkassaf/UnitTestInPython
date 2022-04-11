@@ -16,23 +16,29 @@ def check_user_input(input):
 
 
 def add(x, y):
-    return x + y
+    result =  x + y
+    return result
 
 # This function subtracts two numbers
 def subtract(x, y):
-    return x - y
+    result =  x - y
+    return result
 
 # This function multiplies two numbers
 def multiply(x, y):
-    return x * y
+    result =  x * y
+    return result
 
 # This function divides two numbers
 def divide(x, y):
     if y == 0:
         print("You can't divide by zero!")
         raise ZeroDivisionError("You can't divide by zero!")
+    elif x == 0:
+        return 0
     else:
-        return x / y
+        result =  x / y
+        return result
 
 
 
@@ -65,8 +71,11 @@ def calculate(choice, num1, num2 ):
 
     return result
 
+# this method return true if the user type no and return false if user type yes.
 def isExit(next_calculation):
     if next_calculation == "no":
         return True
-    return False   
+    elif next_calculation == "yes":
+        return False
+    raise ValueError("Invalid choice")     
 
