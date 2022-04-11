@@ -21,9 +21,9 @@ With all these things I achieve 100% Test Coverage in Python.
 ## run test using pytest
 - **pytest test_calculatorApp.py**
 ## Code coverage
-- Run: **coverage run calculatorApp.py** to analyses file
-- Run: **coverage report -m** #outputs anaylsys and shows un covered lines
-- Run: **coverage html**  to create a more concise html version of the report
+- To analyses file, Run: **coverage run calculatorApp.py** 
+- To generate outputs anaylsys and shows covered lines, Run: **coverage report -m**
+- To create a more concise html version of the report, Run: **coverage html**  
 
 ## Run the test and generate code coverage
 - Run the following command to run the tests and print the code coverage:
