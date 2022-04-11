@@ -25,6 +25,11 @@ With all these things I achieve 100% Test Coverage in Python.
 pytest test_calculatorApp.py 
 ```
 
+## Result summary report in python nosetests
+
+- You can run tests for your project using this **nosetests** : ```bash nosetests ```
+- For help with nosetests’ many command-line options, try : ```bash nosetests -h ```
+- For example, ```bash nosetests --with-xunit  ``` generates a xml file conatin the test cases run report.
 ## Code coverage
 - To analyses file, Run: ```bash coverage run calculatorApp.py ```
 - To generate outputs anaylsys and shows covered lines, Run:  ```bash coverage report -m ```
@@ -46,3 +51,5 @@ pytest test_calculatorApp.py
 - https://docs.python.org/3/library/unittest.html
 - https://geekflare.com/unit-testing-with-python-unittest/
 - https://www.youtube.com/watch?v=7BJ_BKeeJyM&ab_channel=SBCODE
+- https://docs.python.org/3/library/unittest.mock.html#unittest.mock.patch
+- https://realpython.com/python-mock-library/#patch
