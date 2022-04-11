@@ -18,7 +18,7 @@ With all these things I achieve 100% Test Coverage in Python.
 
 # Steps 
 
-## run test using pytest
+## Run test using pytest
 
 ```bash
 pytest test_calculatorApp.py 
