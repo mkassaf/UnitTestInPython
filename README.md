@@ -36,7 +36,7 @@ pytest test_calculatorApp.py
     - ```bash pytest --cov=calculatorApp --cov-report=html ```
 
 
-## Refernces 
+# Refernces 
 - https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
 - https://coverage.readthedocs.io/en/6.3.2/
 - https://realpython.com/python-testing/
