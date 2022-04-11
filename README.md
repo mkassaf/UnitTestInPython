@@ -10,36 +10,79 @@ With all these things I achieve 100% Test Coverage in Python.
 
 
 # Setup
-- Create a dirctory for the app: ie  ```bash mkdir project ```
-- Clone the project:  ```bash git clone git@github.com:mkassaf/UnitTestInPython.git ```
-- Go to the app:  ```bash cd UnitTestInPython ```
-- Creating virtual environments:  ```bash python3 -m venv vnev ```
-- Activate virtual environment:  ```bash source vnev/bin/activate ```
-- install the dependanceies:  ```bash pip3 install -r requirements.txt ```
+- Create a dirctory for the app: ie  
+```console
+mkdir project 
+```
+- Clone the project: 
+```console
+git clone git@github.com:mkassaf/UnitTestInPython.git 
+```
+- Go to the app:  
+```console 
+cd UnitTestInPython 
+```
+- Creating virtual environments:  
+```console
+python3 -m venv vnev
+```
+- Activate virtual environment: 
+```console
+source vnev/bin/activate 
+```
+- install the dependanceies:  
+```console
+pip3 install -r requirements.txt 
+```
 
 # Steps 
 
 ## Run test using pytest
 
-```bash
+```console
 pytest test_calculatorApp.py 
 ```
 
 ## Result summary report in python nosetests
 
-- You can run tests for your project using this **nosetests** : ```bash nosetests ```
-- For help with nosetests’ many command-line options, try : ```bash nosetests -h ```
-- For example, ```bash nosetests --with-xunit  ``` generates a xml file conatin the test cases run report.
+- You can run tests for your project using this **nosetests** : 
+```console
+    nosetests 
+```
+- For help with nosetests’ many command-line options, try : 
+```console
+    nosetests -h 
+```
+- For example, 
+```console 
+nosetests --with-xunit 
+``` 
+generates a xml file conatin the test cases run report.
 ## Code coverage
-- To analyses file, Run: ```bash coverage run calculatorApp.py ```
-- To generate outputs anaylsys and shows covered lines, Run:  ```bash coverage report -m ```
-- To create a more concise html version of the report, Run:  ```bash coverage html ```
+- To analyses file, Run: 
+```console  
+    coverage run calculatorApp.py 
+```
+- To generate outputs anaylsys and shows covered lines, Run:  
+```console  
+    coverage report -m 
+```
+- To create a more concise html version of the report, Run:  
+ ```console 
+    coverage html 
+ ```
 
 ## Run the test and generate code coverage
 - Run the following command to run the tests and print the code coverage:
-    - ```bash pytest --cov=calculatorApp ```
+    - 
+    ```console 
+    pytest --cov=calculatorApp 
+    ```
 - Run the following command to run the tests and generate html report for the code coverage: 
-    - ```bash pytest --cov=calculatorApp --cov-report=html ```
+    - 
+    ```console 
+    pytest --cov=calculatorApp --cov-report=html 
+    ```
 
 
 # Refernces 
