@@ -1,6 +1,9 @@
 # Simple calculator
 
 def check_user_input(input):
+    if input == "":
+        print("Input can't be empty")
+        raise ValueError("Input can't be empty")
     try:
         # Convert it into integer
         val = int(input)
