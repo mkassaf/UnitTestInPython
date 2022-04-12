@@ -10,6 +10,7 @@ class TestCalculate(unittest.TestCase):
         print("Setup .. ")
         self.patcher1 = patch('calculatorApp.add', return_value = 5)
         self.MockClass1 = self.patcher1.start()
+        #self.addCleanup(self.patcher1.stop)
 
     def test_AddPass(self):
         self.assertEqual(add(6,3), 9)# will execute the add
@@ -45,11 +46,13 @@ class TestCalculate(unittest.TestCase):
 
     def test_AddPassWithMocEx3(self):
         assert calculatorApp.add is self.MockClass1
-        self.assertEqual(calculate('1',2,3), 5)
+        self.assertEqual(calculate('1',2,6), 5)
+        
+
 
     def tearDown(self):
         print("tearDown .. ")
-        self.patcher1.stop()
+        self.patcher1.stop()#or remove this and add self.addCleanup(self.patcher1.stop) in startup
 
 
 class TestCalculateWithoutMock(unittest.TestCase):
