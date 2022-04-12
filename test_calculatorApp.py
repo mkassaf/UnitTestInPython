@@ -10,14 +10,14 @@ class TestCalculate(unittest.TestCase):
         print("Setup .. ")
         self.patcher1 = patch('calculatorApp.add', return_value = 5)
         self.MockClass1 = self.patcher1.start()
-        #self.addCleanup(self.patcher1.stop)
+        self.addCleanup(self.patcher1.stop)
 
     def test_AddPass(self):
         self.assertEqual(add(6,3), 9)# will execute the add
         self.assertEqual(calculate('1',6,3), 5) # will call the mock
 
     def test_AddInvalid(self):
-        self.assertNotEqual(calculate('1',2,3), 9)
+        self.assertNotEqual(calculate('1',9,3), 9)
 
     def test_DividByZerrorEx1(self):
         with self.assertRaises(ValueError):
@@ -40,7 +40,7 @@ class TestCalculate(unittest.TestCase):
 
     @mock.patch('calculatorApp.add', return_value = 4)
     def test_AddPassWithMockEx2(self, mock_check):
-        result = calculate('1',2,2)
+        result = calculate('1',3,2)
         self.assertEqual(result, 4)
 
 
@@ -52,7 +52,7 @@ class TestCalculate(unittest.TestCase):
 
     def tearDown(self):
         print("tearDown .. ")
-        self.patcher1.stop()#or remove this and add self.addCleanup(self.patcher1.stop) in startup
+        #self.patcher1.stop()#or add this and remove self.addCleanup(self.patcher1.stop) in startup but this is not recommened!
 
 
 class TestCalculateWithoutMock(unittest.TestCase):
