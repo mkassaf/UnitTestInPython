@@ -1,5 +1,6 @@
 # Testing in Python: Unit Tests
 
+
 This repo conatins an exmaple how to write a unit tests in python. In this repo, I show how to run the unit tests, I also go through a process of achieving 100% test coverage by demonstrating:
 - **unittest** 
 - **pytest**
@@ -8,6 +9,9 @@ This repo conatins an exmaple how to write a unit tests in python. In this repo,
 <br/>
 With all these things I achieve 100% Test Coverage in Python.
 
+# Slides 
+
+- https://docs.google.com/presentation/d/1_aDYkoa2zevhaxmkS3GBeZ6eFfd_P7VBffueIoGA574/edit?usp=sharing
 
 # Setup
 - Create a dirctory for the app: ie  
