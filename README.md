@@ -9,7 +9,7 @@ This repo conatins an exmaple how to write a unit tests in python. In this repo,
 <br/>
 With all these things I achieve 100% Test Coverage in Python.
 
-# Slides 
+# Unit test in python slides in the below link 
 
 - https://bit.ly/3uOmny9
 
