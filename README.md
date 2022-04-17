@@ -11,7 +11,7 @@ With all these things I achieve 100% Test Coverage in Python.
 
 # Slides 
 
-- https://docs.google.com/presentation/d/1_aDYkoa2zevhaxmkS3GBeZ6eFfd_P7VBffueIoGA574/edit?usp=sharing
+- https://bit.ly/3uOmny9
 
 # Setup
 - Create a dirctory for the app: ie  
